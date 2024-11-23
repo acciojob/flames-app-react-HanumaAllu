@@ -43,7 +43,7 @@ const App = () => {
         setResult("Affection");
         break;
       case 4:
-        setResult("Marriage");
+        setResult("<h3>Marriage</h3>");
         break;
       case 5:
         setResult("Enemy");
@@ -70,6 +70,7 @@ const App = () => {
       <input
         type="text"
         data-testid="input1"
+        name="name1"  // Added name attribute
         value={name1}
         onChange={(e) => setName1(e.target.value)}
         placeholder="Enter First Name"
@@ -80,6 +81,7 @@ const App = () => {
       <input
         type="text"
         data-testid="input2"
+        name="name2"  // Added name attribute
         value={name2}
         onChange={(e) => setName2(e.target.value)}
         placeholder="Enter Second Name"
